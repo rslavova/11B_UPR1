@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace _01_Obrabotka
 {
@@ -6,7 +7,9 @@ namespace _01_Obrabotka
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var arr = Console.ReadLine().Split().ToArray();
+
+            arr = arr.Distinct();
         }
     }
 }
